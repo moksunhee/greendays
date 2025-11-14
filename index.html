@@ -1,0 +1,3364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greendays</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js"></script>
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+    <!-- 테일윈드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 스와이퍼 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: "GyeonggiMillenniumTitle";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Light.woff")
+          format("woff");
+        font-weight: 300;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GyeonggiMillenniumTitle";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Medium.woff")
+          format("woff");
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GyeonggiMillenniumTitle";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Bold.woff")
+          format("woff");
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GyeonggiMillenniumTitle";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/TitleV.woff")
+          format("woff");
+        font-weight: 800;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GyeonggiMillenniumBackground";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff")
+          format("woff");
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GyeonggiMillenniumBackground";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Bold.woff")
+          format("woff");
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Aggravo";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff")
+          format("woff");
+        font-weight: 300;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Aggravo";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff")
+          format("woff");
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Aggravo";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+          format("woff");
+        font-weight: 700;
+        font-display: swap;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@400..700&family=Itim&family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="sec sec_1 h-950">
+      <div class="con relative">
+        <div class="img_box main-items">
+          <img src="/greendays_imgs/1_main_items.png" alt="" />
+        </div>
+        <div class="img_box logo_1">
+          <img src="/greendays_imgs/1_logo.png" alt="" />
+        </div>
+        <div class="img_box eco-friendly ani_dance">
+          <img src="/greendays_imgs/1_eco-friendly.png" alt="" />
+        </div>
+        <div class="img_box eco-memo">
+          <img src="/greendays_imgs/1_eco-memo.png" alt="" />
+        </div>
+        <div class="img_box eco-triangle">
+          <img src="/greendays_imgs/1_eco-triangle.png" alt="" />
+        </div>
+        <div class="img_box curved-line">
+          <img src="/greendays_imgs/1_curved_line.png" alt="" />
+        </div>
+        <div class="img_box refill-reuse ani_dance">
+          <img src="/greendays_imgs/1_refill_reuse.png" alt="" />
+        </div>
+        <div class="img_box leaf">
+          <img src="/greendays_imgs/1_leaf.png" alt="" />
+        </div>
+        <div class="img_box zero-waste ani_dance">
+          <img src="/greendays_imgs/1_zero-waste.png" alt="" />
+        </div>
+        <div class="img_box green-dots">
+          <img src="/greendays_imgs/1_green-dots.png" alt="" />
+        </div>
+        <div class="img_box star">
+          <img src="/greendays_imgs/1_star.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_2 h-950">
+      <div class="con relative">
+        <div class="img_box title">
+          <img src="/greendays_imgs/2_title.png" alt="" />
+        </div>
+        <div class="img_box sub_title">
+          <img src="/greendays_imgs/2_sub_title.png" alt="" />
+        </div>
+        <div
+          class="img_box sub_title_underline active-on-visible"
+          data-active-on-visible-diff-y="-200"
+        >
+          <img src="/greendays_imgs/2_sub-title_underline.png" alt="" />
+        </div>
+        <div class="img_box RT_tree">
+          <img src="/greendays_imgs/2_tree.png" alt="" />
+        </div>
+        <div class="img_box LB_product">
+          <img src="/greendays_imgs/2_LB_product.png" alt="" />
+        </div>
+        <div class="img_box RB_swirl">
+          <img src="/greendays_imgs/2_swirl.png" alt="" />
+        </div>
+        <div class="img_box RB_product">
+          <img src="/greendays_imgs/2_procuct_bodylotion.png" alt="" />
+        </div>
+
+        <div class="bottom-box">
+          <div class="img_box bottom-box_line">
+            <img src="/greendays_imgs/2_bottom-box_line.png" alt="" />
+          </div>
+          <div class="bottom-box_bottom">
+            <div class="img_box mission_vision">
+              <img src="/greendays_imgs/2_Mission & Vision.png" alt="" />
+            </div>
+            <p class="vision-title_box">
+              “우리는 지속 가능한 패키징 솔루션으로 환경과 사람을 연결합니다.”
+              오늘의 작은 실천이 내일의 변화를 만든다고 믿습니다.
+              <br />
+              Green for a day, Change for tomorrow.“우리는 지속 가능한 패키징
+              솔루션으로 환경과 사람을 연결합니다.”
+              <br />
+              오늘의 작은 실천이 내일의 변화를 만든다고 믿습니다.
+            </p>
+            <div class="img_box logo_2">
+              <img src="/greendays_imgs/2_logo.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_3 h-950">
+      <div class="con relative">
+        <div class="img_box full_logo">
+          <img src="/greendays_imgs/3_full_logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_4" id="BrandIdentity">
+      <div class="con">
+        <div class="brand_title_box">
+          <div class="title_img_box img_box">
+            <img src="/greendays_imgs/4_brand_identity.png" alt="" />
+          </div>
+          <p class="text_box">
+            Greendays - Reducing Excess and Building Sustainability Simply and
+            Transparently by Adding
+            <br />
+            Friendliness, Honesty, and Transparency to Zero Waste
+          </p>
+        </div>
+        <div class="identity_box f_C_C">
+          <div class="circle-box circle-1 active-on-visible">
+            <p>제로 웨이스트</p>
+          </div>
+          <span class="circle-side">+</span>
+          <div
+            class="circle-box circle-2 active-on-visible"
+            data-active-on-visible-delay="200"
+          >
+            <p>친근함</p>
+            <p>정직함</p>
+            <p>투명성</p>
+          </div>
+          <span class="circle-side">=</span>
+          <div
+            class="circle-box circle-3 active-on-visible"
+            data-active-on-visible-delay="400"
+          >
+            <p>불필요함을 줄이고,</p>
+            <p>심플하고 투명하게 지속 가능성을</p>
+            <p>만들어나가는 그린데이즈</p>
+          </div>
+        </div>
+        <div class="img_wrap">
+          <div class="img_box">
+            <img src="/greendays_imgs/4_임시.png" alt="" />
+          </div>
+          <div class="img_box">
+            <img src="/greendays_imgs/4_bag.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_5" id="Logo">
+      <div class="con">
+        <div class="brand_title_box">
+          <div class="title_img_box img_box">
+            <img src="/greendays_imgs/5_logo system.png" alt="" />
+          </div>
+          <p class="text_box">
+            We have created two types of logos in English: a formal main logo
+            with the
+            <br />
+            slogan included, and a handwritten logo for packaging.
+          </p>
+        </div>
+        <div class="whole_logo_box">
+          <div class="logo_box logo_box_1">
+            <div class="logo_wrap logo_wrap_1">
+              <span>영문로고</span>
+              <div class="logo_img logo_img-1 img_box active-on-visible">
+                <img src="/greendays_imgs/5_eng_logo.png" alt="" />
+              </div>
+            </div>
+            <div class="logo_wrap logo_wrap_2">
+              <span>일러스트로고</span>
+              <div
+                class="logo_img logo_img-2 img_box active-on-visible"
+                data-active-on-visible-delay="200"
+              >
+                <img src="/greendays_imgs/5_ill_logo.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="logo_box logo_box_2">
+            <div class="logo_wrap logo_wrap_1">
+              <span>세로한글로고</span>
+              <div
+                class="logo_img logo_img-3 img_box active-on-visible"
+                data-active-on-visible-delay="400"
+              >
+                <img src="/greendays_imgs/5_length_logo.png" alt="" />
+              </div>
+            </div>
+            <div class="logo_wrap logo_wrap_2">
+              <span>가로한글로고</span>
+              <div
+                class="logo_img logo_img-4 img_box active-on-visible"
+                data-active-on-visible-delay="600"
+              >
+                <img src="/greendays_imgs/5_width_logo.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img_box bottom_wave">
+        <img src="/greendays_imgs/5_bottom_wave.png" alt="" />
+      </div>
+    </section>
+
+    <section class="sec sec_6 h-950" id="Character">
+      <div class="con relative">
+        <div class="text_box">
+          <div class="img_box character_system">
+            <img src="/greendays_imgs/6_character_system.png" alt="" />
+          </div>
+          <h3>"지구와 일상을 연결하는 우리의 그린하루 프렌즈!!"</h3>
+          <p>
+            “Greendays Friends는 일상 속 자원과 용기를 친구처럼 표현한
+            캐릭터들입니다. 지구와 쓰레기통, 유리와 캔, 리필 용기까지
+            <br />
+            우리가 매일 만나는 자원들이 캐릭터가 되어 친근하게 제로웨이스트를
+            이야기합니다. 단순한 상징을 넘어, 아이부터 어른까지
+            <br />
+            누구나 쉽게 공감하고 환경 실천에 참여할 수 있도록 돕는 ‘환경
+            메신저’입니다.”
+          </p>
+        </div>
+      </div>
+      <div class="img_box cloud cloud_1 ani_float_cloud">
+        <img src="/greendays_imgs/6_cloud.png" alt="" />
+      </div>
+      <div class="img_box cloud cloud_2">
+        <img src="/greendays_imgs/6_cloud.png" alt="" />
+      </div>
+      <div class="img_box cloud cloud_3">
+        <img src="/greendays_imgs/6_cloud.png" alt="" />
+      </div>
+      <div class="img_box cloud cloud_4">
+        <img src="/greendays_imgs/6_cloud.png" alt="" />
+      </div>
+
+      <div class="character-box">
+        <div class="img_box HARU character_jump">
+          <img src="/greendays_imgs/8_HARU.png" alt="" />
+        </div>
+        <div class="img_box BIUM character_jump">
+          <img src="/greendays_imgs/8_BIUM.png" alt="" />
+        </div>
+        <div class="img_box BINI character_jump">
+          <img src="/greendays_imgs/8_BINI.png" alt="" />
+        </div>
+        <div class="img_box KKANG-I character_jump">
+          <img src="/greendays_imgs/8_KKANG-I.png" alt="" />
+        </div>
+        <div class="img_box YURI character_jump">
+          <img src="/greendays_imgs/8_YURI.png" alt="" />
+        </div>
+        <div class="img_box REFILL-I character_jump">
+          <img src="/greendays_imgs/8_REFILL-I.png" alt="" />
+        </div>
+        <div class="img_box CHAEUM-I character_jump">
+          <img src="/greendays_imgs/8_CHAEUM-I.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sec_7 h-950">
+      <div class="con relative">
+        <div class="img_box bean">
+          <img src="/greendays_imgs/7_bean.png" alt="" />
+        </div>
+        <div class="img_box curved-line_top">
+          <img src="/greendays_imgs/1_curved_line.png" alt="" />
+        </div>
+        <div class="img_box leaf">
+          <img src="/greendays_imgs/1_leaf.png" alt="" />
+        </div>
+        <div class="img_box curved-line_right">
+          <img src="/greendays_imgs/1_curved_line.png" alt="" />
+        </div>
+        <div class="img_box eco-triangle">
+          <img src="/greendays_imgs/1_eco-triangle.png" alt="" />
+        </div>
+        <div class="img_box eco-memo">
+          <img src="/greendays_imgs/1_eco-memo.png" alt="" />
+        </div>
+        <div class="img_box zigu ani_dance">
+          <img src="/greendays_imgs/7_zigu.png" alt="" />
+        </div>
+        <div class="img_box star">
+          <img src="/greendays_imgs/7_star.png" alt="" />
+        </div>
+        <div class="img_box character_story">
+          <img src="/greendays_imgs/7_Character_Story.png" alt="" />
+        </div>
+        <h3 class="character_title">
+          "우리 그린하루 친구들의
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          제로웨이스트 이야기를 들려줄게."
+        </h3>
+        <p class="character_text">
+          그린하루 친구들은 일상 속 작은 자원과 습관을 자연스럽게 친구처럼
+          보여줘요.
+          <br />
+          그 작은 선택들이 모이면 지구에 큰 변화를 만들 수 있답니다.
+          <br />
+          그래서 다정하게 속삭이죠,
+          <br />
+          “환경을 지키는 일, 어렵지 않아. 작은 습관부터 시작하면 돼.”
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="sec sec_8 h-950 active-on-visible"
+      data-active-on-visible-diff-y="-300"
+      data-active-on-visible-delay="2000"
+    >
+      <!-- 배경 -->
+      <div class="sky">
+        <div
+          class="img_box UFO active-on-visible"
+          data-active-on-visible-diff-y="-300"
+          data-active-on-visible-delay="3000"
+        >
+          <img src="/greendays_imgs/8_UFOzigu.png" alt="" />
+        </div>
+        <div
+          class="img_box moon active-on-visible"
+          data-active-on-visible-diff-y="-300"
+          data-active-on-visible-delay="3000"
+        >
+          <img src="/greendays_imgs/8_moon.png" alt="" />
+        </div>
+        <div class="night"></div>
+        <div class="stars active-on-visible"
+          data-active-on-visible-diff-y="-300"
+          data-active-on-visible-delay="4000">
+          <span class="ico-star ico-star-1"></span>
+          <span class="ico-star ico-star-1"></span>
+          <span class="ico-star ico-star-2"></span>
+          <span class="ico-star ico-star-3"></span>
+          <span class="ico-star ico-star-4"></span>
+          <span class="ico-star ico-star-5"></span>
+          <span class="ico-star ico-star-6"></span>
+          <span class="ico-star ico-star-7"></span>
+          <span class="ico-star ico-star-8"></span>
+          <span class="ico-star ico-star-9"></span>
+          <span class="ico-star ico-star-10"></span>
+        </div>
+      </div>
+
+      <!-- 스와이퍼 -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide HARU">
+            <div class="img_box name_arrow">
+              <img src="/greendays_imgs/8_HARU_name_arrow.png" alt="" />
+            </div>
+            <div class="img_box character-img btn-popup-1">
+              <img src="/greendays_imgs/8_HARU.png" alt="" />
+            </div>
+            <div class="mbti_box">
+              <span>ENFP</span>
+              <span>다정함</span>
+              <span>리더쉽</span>
+            </div>
+            <p>"오늘 하루도 지구를 지켜보자구~!"</p>
+          </div>
+          <div class="swiper-slide BIUM">
+            <div class="img_box name_arrow">
+              <img src="/greendays_imgs/8_BIUM_name_arrow.png" alt="" />
+            </div>
+            <div class="img_box character-img btn-popup-2">
+              <img src="/greendays_imgs/8_BIUM.png" alt="" />
+            </div>
+            <div class="mbti_box">
+              <span>INTJ</span>
+              <span>꼼꼼함</span>
+              <span>정리왕</span>
+            </div>
+            <p>"불필요한걸 잘 비워내야해~!"</p>
+          </div>
+          <div class="swiper-slide BINI">
+            <div class="img_box name_arrow">
+              <img src="/greendays_imgs/8_BINI_name_arrow.png" alt="" />
+            </div>
+            <div class="img_box character-img btn-popup-3">
+              <img src="/greendays_imgs/8_BINI.png" alt="" />
+            </div>
+            <div class="mbti_box">
+              <span>INFP</span>
+              <span>다정함</span>
+              <span>리더쉽</span>
+            </div>
+            <p>"작은 습관이 큰 변화를 만들어~!"</p>
+          </div>
+          <div class="swiper-slide KKANG-I">
+            <div class="img_box name_arrow">
+              <img src="/greendays_imgs/8_KKANG-I_name_arrow.png" alt="" />
+            </div>
+            <div class="img_box character-img btn-popup-4">
+              <img src="/greendays_imgs/8_KKANG-I.png" alt="" />
+            </div>
+            <div class="mbti_box">
+              <span>ISTJ</span>
+              <span>신뢰감</span>
+              <span>든든함</span>
+            </div>
+            <p>"내가 맡을게, 걱정 마!"</p>
+          </div>
+          <div class="swiper-slide YURI">
+            <div class="img_box name_arrow">
+              <img src="/greendays_imgs/8_YURI_name_arrow.png" alt="" />
+            </div>
+            <div class="img_box character-img btn-popup-5">
+              <img src="/greendays_imgs/8_YURI.png " alt="" />
+            </div>
+            <div class="mbti_box">
+              <span>INTP</span>
+              <span>똑똑함</span>
+              <span>차분함</span>
+            </div>
+            <p>"잠깐, 이건 이렇게 하면 더 효율적이야."</p>
+          </div>
+          <div class="swiper-slide REFILL-I">
+            <div class="img_box name_arrow">
+              <img src="/greendays_imgs/8_REFILL-I_name_arrow.png" alt="" />
+            </div>
+            <div class="img_box character-img btn-popup-6">
+              <img src="/greendays_imgs/8_REFILL-I.png" alt="" />
+            </div>
+            <div class="mbti_box">
+              <span>ISFJ</span>
+              <span>알뜰함</span>
+              <span>실용성</span>
+            </div>
+            <p>"딱 필요한 만큼만 챙기자."</p>
+          </div>
+          <div class="swiper-slide CHAEUM-I">
+            <div class="img_box name_arrow">
+              <img src="/greendays_imgs/8_CHAEUM-I_name_arrow.png" alt="" />
+            </div>
+            <div class="img_box character-img btn-popup-7">
+              <img src="/greendays_imgs/8_CHAEUM-I.png" alt="" />
+            </div>
+            <div class="mbti_box">
+              <span>ENFJ</span>
+              <span>명랑함</span>
+              <span>배려심</span>
+            </div>
+            <p>"괜찮아, 내가 응원할게!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+
+      <!-- 팝업 -->
+      <div class="popup-1 popup HARU">
+        <div class="popup__content">
+          <div class="popup__btn-close"></div>
+          <div class="popup__character"></div>
+          <div class="popup__text-box">
+            <div class="popup__name"></div>
+            <p class="popup__text">
+              다정하고 리더십이 강한 친구
+              <br />
+              지구를 상징하는 만큼 모두를 감싸 안으며 조언을 잘 해주고,
+              <br />
+              “오늘 하루도 지구를 지켜보자!” 하고 독려하는 분위기메이커.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="popup-2 popup BIUM">
+        <div class="popup__content">
+          <div class="popup__btn-close"></div>
+          <div class="popup__character"></div>
+          <div class="popup__text-box">
+            <div class="popup__name"></div>
+            <p class="popup__text">
+              깔끔하고 정리정돈을 좋아하는 친구
+              <br />
+              불필요한 걸 잘 비워내자고늘 이야기한다.
+              <br />
+              잔소리처럼 보일 때도 있지만, 사실 다들 도움을 많이 받는다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="popup-3 popup BINI">
+        <div class="popup__content">
+          <div class="popup__btn-close"></div>
+          <div class="popup__character"></div>
+          <div class="popup__text-box">
+            <div class="popup__name"></div>
+            <p class="popup__text">
+              장난꾸러기, 활발하고 호기심이 많은 친구
+              <br />
+              주황빛으로 눈에 잘 띄고, 여기저기 뛰어다니며
+              <br />
+              새로운 걸 시도하길 좋아한다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="popup-4 popup KKANG-I">
+        <div class="popup__content">
+          <div class="popup__btn-close"></div>
+          <div class="popup__character"></div>
+          <div class="popup__text-box">
+            <div class="popup__name"></div>
+            <p class="popup__text">
+              듬직하고 힘이 센 친구
+              <br />
+              깡통처럼 단단하고 믿음직스럽다.
+              <br />
+              무거운 것도 척척 들어주고, 위기 상황에서 앞장선다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="popup-5 popup YURI">
+        <div class="popup__content">
+          <div class="popup__btn-close"></div>
+          <div class="popup__character"></div>
+          <div class="popup__text-box">
+            <div class="popup__name"></div>
+            <p class="popup__text">
+              똑똑하고 차분한 친구
+              <br />
+              오래 쓸 수 있는 유리병처럼 단단하고, 현명하다.
+              <br />
+              무리에서 아이디어를 내거나 문제를 해결할 때 큰 힘이 된다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="popup-6 popup REFILL-I">
+        <div class="popup__content">
+          <div class="popup__btn-close"></div>
+          <div class="popup__character"></div>
+          <div class="popup__text-box">
+            <div class="popup__name"></div>
+            <p class="popup__text">
+              실용적이고 알뜰한 친구
+              <br />
+              “있는 걸 다시 써보자!”라는 말을 자주 하며 아이디어 뱅크 역할.
+              <br />
+              친구들이 필요할 때 딱 맞게 채워주는 센스가 있다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="popup-7 popup CHAEUM-I">
+        <div class="popup__content">
+          <div class="popup__btn-close"></div>
+          <div class="popup__character"></div>
+          <div class="popup__bg">
+            <div class="popup__text-box">
+              <div class="popup__name"></div>
+              <p class="popup__text">
+                밝고 응원하는 걸 좋아하는 에너지러너
+                <br />
+                “비운 만큼 좋은 걸 채우자!”라며 주변을 격려하고
+                <br />
+                작은 일에도 별처럼 반짝이며 칭찬해준다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_9" id="Color&Typography">
+      <div class="img_box top_wave">
+        <img src="/greendays_imgs/9_top_wave.png" alt="" />
+      </div>
+      <div class="con">
+        <div class="brand_title_box">
+          <div class="title_img_box img_box">
+            <img src="/greendays_imgs/9_color&typography.png" alt="" />
+          </div>
+          <p class="text_box">
+            Greendays - Reducing Excess and Building Sustainability Simply and
+            Transparently by Adding
+            <br />
+            Friendliness, Honesty, and Transparency to Zero Waste
+          </p>
+        </div>
+        <div class="color_chip_box">
+          <div
+            class="color_wrap active-on-visible"
+            data-active-on-visible-diff-y="-200"
+          >
+            <div class="img_box color_chip color_skyblue">
+              <img src="/greendays_imgs/9_color_skyblue.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="color_wrap active-on-visible"
+            data-active-on-visible-diff-y="-200"
+            data-active-on-visible-delay="200"
+          >
+            <div class="img_box color_chip color_ligntgreen">
+              <img src="/greendays_imgs/9_color_ligntgreen.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="color_wrap active-on-visible"
+            data-active-on-visible-diff-y="-200"
+            data-active-on-visible-delay="400"
+          >
+            <div class="img_box color_chip color_lightgrey">
+              <img src="/greendays_imgs/9_color_lightgrey.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="color_wrap active-on-visible"
+            data-active-on-visible-diff-y="-200"
+            data-active-on-visible-delay="600"
+          >
+            <div class="img_box color_chip color_lemon">
+              <img src="/greendays_imgs/9_color_lemon.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="color_wrap active-on-visible"
+            data-active-on-visible-diff-y="-200"
+            data-active-on-visible-delay="800"
+          >
+            <div class="img_box color_chip color_lightsalmon">
+              <img src="/greendays_imgs/9_color_lightsalmon.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="font_box img_box active-on-visible"
+          data-active-on-visible-diff-y="-200"
+        >
+          <img src="/greendays_imgs/9_text.png" alt="" />
+        </div>
+      </div>
+      <div class="img_box bottom_wave">
+        <img src="/greendays_imgs/9_bottom_wave.png" alt="" />
+      </div>
+    </section>
+
+    <section class="sec sec_10">
+      <div class="con">
+        <div class="img_box">
+          <img
+            src="greendays_imgs/10_grapefruit.png"
+            class="grapefruit normal"
+            alt=""
+          />
+          <img
+            src="greendays_imgs/10_hover_grapefruit.png"
+            class="hover"
+            alt=""
+          />
+        </div>
+        <div class="img_box">
+          <img src="greendays_imgs/10_lemon.png" class="lemon normal" alt="" />
+          <img src="greendays_imgs/10_hover_lemon.png" class="hover" alt="" />
+        </div>
+        <div class="img_box">
+          <img src="greendays_imgs/10_lilac.png" class="lilac normal" alt="" />
+          <img src="greendays_imgs/10_hover_lilac.png" class="hover" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_11 h-950" id="Sticker">
+      <div class="img_box glued_sticker">
+        <img src="greendays_imgs/11.Glued Sticker.png" alt="" />
+      </div>
+      <div class="img_box roll_sticker">
+        <img src="greendays_imgs/11_roll sticker.png" alt="" />
+      </div>
+    </section>
+
+    <section class="sec sec_12">
+      <div class="con">
+        <div class="img_box boximg">
+          <img src="greendays_imgs/12_boximg.png" alt="" />
+          <div class="img_box txt">
+            <img src="greendays_imgs/12_txtbg.png" alt="" />
+            <img src="greendays_imgs/12_txt2.png" alt="" />
+            <img src="greendays_imgs/12_txt1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_13">
+      <div class="img_box bg_img">
+        <img src="greendays_imgs/13_bg.png" alt="" />
+      </div>
+
+      <div class="img_box character_goods">
+        <img src="greendays_imgs/13_임시.png" alt="" />
+      </div>
+    </section>
+
+    <section class="sec sec_14 h-950">
+      <div class="product-text-box">
+        <div class="img_box title">
+          <img src="/greendays_imgs/14-detergent.png" alt="" />
+        </div>
+        <div class="img_box line">
+          <img src="/greendays_imgs/14_line.png" alt="" />
+        </div>
+        <p>
+          These are detergent products available in two sizes. They are offered
+          in four different fragrances and
+          <br />
+          can be refilled using refill packs.
+        </p>
+      </div>
+      <div class="img_box leaf-1">
+        <img src="/greendays_imgs/14_leaf.png" alt="" />
+      </div>
+      <div class="img_box leaf-2">
+        <img src="/greendays_imgs/14_leaf.png" alt="" />
+      </div>
+      <div class="img_box products">
+        <img src="/greendays_imgs/14_products.png" alt="" />
+      </div>
+      <div class="img_box bottom">
+        <img src="/greendays_imgs/14_grey_bottom.png" alt="" />
+      </div>
+    </section>
+
+    <section class="sec sec_15 h-950">
+      <div class="product-text-box">
+        <div class="img_box title">
+          <img src="/greendays_imgs/15-refill.png" alt="" />
+        </div>
+        <div class="img_box line">
+          <img src="/greendays_imgs/14_line.png" alt="" />
+        </div>
+        <p>This image shows a refill pack that is sold for refill use.</p>
+      </div>
+      <div class="img_box leaf-1">
+        <img src="/greendays_imgs/15_LTleaf.png" alt="" />
+      </div>
+      <div class="img_box leaf-2">
+        <img src="/greendays_imgs/14_leaf.png" alt="" />
+      </div>
+      <div class="img_box leaf-3">
+        <img src="/greendays_imgs/14_leaf.png" alt="" />
+      </div>
+      <div class="img_box bottom-L">
+        <img src="/greendays_imgs/15_left_element.png" alt="" />
+      </div>
+      <div class="img_box bottom-R">
+        <img src="/greendays_imgs/15_right_element.png" alt="" />
+      </div>
+      <div class="img_box top">
+        <img src="/greendays_imgs/15_middle_element.png" alt="" />
+      </div>
+      <div class="img_box products-dotted-line">
+        <img src="/greendays_imgs/15_products_dotted_line.png" alt="" />
+      </div>
+    </section>
+
+    <div class="sec sec_16 h-950">
+      <div
+        class="img-box img_wrap active-on-visible"
+        data-active-on-visible-diff-y="-200"
+      >
+        <img src="/greendays_imgs/16.bobble.png" alt="" />
+      </div>
+      <div class="product_wrap">
+        <div class="product-text-box">
+          <div class="img_box title">
+            <img src="/greendays_imgs/16_handsoap_text.png" alt="" />
+          </div>
+          <div class="img_box line">
+            <img src="/greendays_imgs/14_line.png" alt="" />
+          </div>
+          <p>
+            This is a foaming hand wash product. The left section shows the
+            product’s texture.
+          </p>
+        </div>
+        <div class="img_box handsoap">
+          <img src="/greendays_imgs/16.hand_soap.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="sec sec_17 h-950">
+      <div class="product_wrap">
+        <div class="product-text-box">
+          <div class="img_box title">
+            <img src="/greendays_imgs/17_soap_text.png" alt="" />
+          </div>
+          <div class="img_box line">
+            <img src="/greendays_imgs/14_line.png" alt="" />
+          </div>
+          <p>
+            This is an eco-friendly solid soap, available in four different
+            fragrances.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="img-box img_wrap active-on-visible"
+        data-active-on-visible-diff-y="-200"
+      >
+        <img src="/greendays_imgs/17_soap.png" alt="" />
+      </div>
+    </div>
+
+    <section class="sec sec_18 h-950">
+      <div class="con relative">
+        <div class="img_box full_logo">
+          <img src="/greendays_imgs/3_full_logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_19 h-950">
+      <div class="img_box img_box_1"><img src="" alt="" /></div>
+      <div class="img_box img_box_2">
+        <img src="/greendays_imgs/19_logo.png" alt="" />
+      </div>
+      <div class="img_box img_box_3"></div>
+      <div class="img_box img_box_4"></div>
+      <div class="img_box img_box_5"></div>
+      <div class="img_box img_box_6">
+        <img src="/greendays_imgs/19_svg_greendays.png" alt="" />
+      </div>
+    </section>
+
+    <section class="sec sec_20 h-950">
+      <div class="con relative">
+        <div class="img_box_wrap">
+          <div class="img_box active-on-visible">
+            <img src="/greendays_imgs/20_bag-cap.png" alt="" />
+          </div>
+          <div
+            class="img_box active-on-visible"
+            data-active-on-visible-delay="200"
+          >
+            <img src="/greendays_imgs/20_t-shirt.png" alt="" />
+          </div>
+          <div
+            class="img_box active-on-visible"
+            data-active-on-visible-delay="400"
+          >
+            <img src="/greendays_imgs/20_grass.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_21 h-950"></section>
+
+    <section class="sec sec_22 h-950"></section>
+
+    <section class="sec sec_23 h-950"></section>
+
+    <section class="sec sec_24 h-950"></section>
+
+    <section class="sec sec_25 h-950"></section>
+
+    <section class="sec_26 h-950"></section>
+
+    <aside class="sidebar">
+      <div>
+        <a href="#BrandIdentity">Brand Identity</a>
+        <img src="/greendays_imgs/aside_line.png" alt="" />
+      </div>
+      <div>
+        <a href="#Logo">Logo</a>
+        <img src="/greendays_imgs/aside_line.png" alt="" />
+      </div>
+      <div>
+        <a href="#Character">Character</a>
+        <img src="/greendays_imgs/aside_line.png" alt="" />
+      </div>
+      <div>
+        <a href="#Color&Typography">
+          Color &
+          <br />
+          Typography
+        </a>
+        <img src="/greendays_imgs/aside_line.png" alt="" />
+      </div>
+    </aside>
+
+    <style>
+      /* 노말라이즈 */
+      body,
+      ul,
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* 라이브러리 */
+      .sec {
+        overflow-x: hidden;
+        background: url(/greendays_imgs/sec_bg.png) no-repeat center top / cover;
+      }
+
+      .h-950 {
+        height: 950px;
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .con {
+        width: 1360px;
+        height: 100%;
+        margin: 0 auto;
+      }
+
+      .con > .img_box {
+        position: absolute;
+      }
+
+      .img_box > img {
+        width: 100%;
+        display: block;
+      }
+
+      .f_C_C {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* full 로고 */
+
+      .sec .full_logo {
+        width: 750px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* 애니매이션 */
+
+      .ani_dance img {
+        animation: ani_dance 1.5s infinite ease-in-out alternate;
+      }
+
+      .ani_dance_hover img:hover {
+        animation: ani_dance 1.5s infinite ease-in-out alternate;
+      }
+
+      @keyframes ani_dance {
+        0% {
+          transform: rotate(-5deg);
+        }
+        33% {
+          transform: rotate(5deg);
+        }
+        66% {
+          transform: rotate(-5deg);
+        }
+        100% {
+          transform: rotate(5deg);
+        }
+      }
+
+      .ani_LeftToRight img {
+        animation: ani_LeftToRight 0.5s ease-in-out;
+      }
+
+      @keyframes ani_LeftToRight {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      /* 커스텀 */
+
+      html,
+      body {
+        overflow-x: hidden;
+        user-select: none;
+      }
+
+      /* 섹션1 시작 */
+
+      .sec_1 {
+        background: url(/greendays_imgs/1_bg.png) no-repeat center top / cover;
+      }
+
+      .sec_1 .main-items {
+        width: 1400px;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .sec_1 .logo_1 {
+        width: 200px;
+        left: 50%;
+        bottom: 8%;
+        transform: translateX(-50%);
+      }
+
+      .sec_1 .eco-friendly {
+        width: 217px;
+        left: 8%;
+        top: 60%;
+      }
+
+      .sec_1 .eco-memo {
+        width: 185px;
+        right: 10%;
+        top: 70%;
+      }
+
+      .sec_1 .eco-triangle {
+        width: 54px;
+        left: 25%;
+        bottom: 18%;
+      }
+
+      .sec_1 .curved-line {
+        width: 65px;
+        left: 22%;
+        top: 14%;
+      }
+
+      .sec_1 .refill-reuse {
+        width: 165px;
+        left: 30%;
+        top: 20%;
+      }
+
+      .sec_1 .leaf {
+        width: 65px;
+        left: 19%;
+        top: 26%;
+      }
+
+      .sec_1 .zero-waste {
+        width: 300px;
+        left: 63%;
+        top: 20%;
+      }
+
+      .sec_1 .green-dots {
+        width: 85px;
+        left: 54%;
+        top: 17%;
+      }
+
+      .sec_1 .star {
+        width: 76px;
+        left: 34%;
+        top: 62%;
+      }
+
+      /* 섹션1 끝 */
+
+      /* 섹션2 시작 */
+
+      .sec_2 .title {
+        width: 850px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 250px;
+      }
+
+      .sec_2 .sub_title {
+        width: 450px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 310px;
+      }
+
+      .sec_2 .sub_title_underline {
+        width: 200px;
+        left: 676px;
+        bottom: 372px;
+        overflow: hidden;
+        transform: translateX(-100%);
+        transition: transform 1s;
+      }
+      .sec_2 .sub_title_underline img {
+        transform: translateX(100%);
+        transition: transform 1s;
+      }
+
+      .sec_2 .sub_title_underline.active {
+        transform: translateX(0);
+      }
+
+      .sec_2 .sub_title_underline.active > img {
+        transform: translateX(0);
+      }
+
+      .sec_2 .RT_tree {
+        width: 152px;
+        right: 40px;
+        top: 60px;
+      }
+
+      .sec_2 .LB_product {
+        width: 250px;
+        left: 0;
+        bottom: 180px;
+      }
+
+      .sec_2 .RB_swirl {
+        width: 100px;
+        right: 80px;
+        bottom: 200px;
+      }
+      .sec_2 .RB_product {
+        width: 170px;
+        right: 0;
+        bottom: 180px;
+      }
+
+      .sec_2 .bottom-box {
+        position: absolute;
+        width: 1250px;
+        height: 105px;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .sec_2 .bottom-box .bottom-box_line,
+      .sec_2 .bottom-box .bottom-box_bottom {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .sec_2 .bottom-box .bottom-box_bottom {
+        height: 100px;
+      }
+
+      .sec_2 .bottom-box .bottom-box_bottom .mission_vision {
+        width: 170px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+
+      .sec_2 .bottom-box .bottom-box_bottom .vision-title_box {
+        width: 880px;
+        position: absolute;
+        top: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        font-size: 15px;
+        font-family: "GyeonggiMillenniumTitle";
+        line-height: 20px;
+        font-weight: 300;
+        color: #7e7e7f;
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: #000;
+      }
+
+      .sec_2 .bottom-box .logo_2 {
+        position: absolute;
+        width: 130px;
+        top: 40px;
+        right: 20px;
+      }
+
+      /* 섹션2 끝 */
+
+      /* 섹션3 시작 */
+
+      .sec_3 {
+        background: url(/greendays_imgs/3_bg.png) no-repeat center top / cover;
+      }
+
+      /* 섹션3 끝 */
+
+      /* 섹션4 시작 */
+
+      .sec_4 .brand_title_box {
+        margin: 150px 0;
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 15px;
+        line-height: 20px;
+        color: #7e7e7f;
+      }
+
+      .sec_4 .brand_title_box .title_img_box {
+        width: 290px;
+        margin-bottom: 10px;
+      }
+
+      .sec_4 .identity_box {
+        gap: 45px;
+      }
+
+      .sec_4 .identity_box .circle-box {
+        font-family: "Barlow", sans-serif;
+        width: 280px;
+        height: 280px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: 3px solid #d9d9d9;
+        border-radius: 140px;
+        font-size: 16px;
+        transition: transform 1s, opacity 1s;
+        opacity: 0;
+        transform: translateY(50%);
+      }
+
+      .sec_4 .identity_box .circle-box.active {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+
+      .sec_4 .identity_box .circle-2 {
+        border: 3px solid #ffffff;
+      }
+
+      .sec_4 .identity_box .circle-3 {
+        border: 3px solid #b4d4e0;
+        width: 380px;
+        font-weight: bold;
+      }
+
+      .sec_4 .img_wrap {
+        width: 1360px;
+        height: 700px;
+        margin: 200px 0 60px;
+        display: flex;
+      }
+
+      .sec_4 .img_wrap > .img_box:first-child {
+        width: 420px;
+      }
+
+      .sec_4 .img_wrap > .img_box:last-child {
+        width: 940px;
+        height: 100%;
+      }
+
+      /* 섹션4 끝 */
+
+      /* 섹션5 시작 */
+
+      .sec_5 {
+        position: relative;
+      }
+
+      .sec_5 .brand_title_box {
+        margin: 150px 0;
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 15px;
+        line-height: 20px;
+        color: #7e7e7f;
+      }
+
+      .sec_5 .brand_title_box .title_img_box {
+        width: 260px;
+        margin-bottom: 10px;
+      }
+
+      .sec_5 .whole_logo_box {
+        margin-bottom: 100px;
+        margin-left: 50px;
+      }
+
+      .sec_5 .whole_logo_box .logo_box {
+        font-family: "Aggravo";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        color: #949494;
+        margin: 0 auto;
+        gap: 40px;
+      }
+
+      .sec_5 .whole_logo_box .logo_box .logo_wrap {
+        width: 500px;
+        height: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sec_5 .whole_logo_box .logo_box .logo_wrap span {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .sec_5 .whole_logo_box .logo_box .logo_wrap .logo_img {
+        z-index: 10;
+        transition: transform 1s, opacity 1s;
+        opacity: 0;
+        transform: translateY(50%);
+      }
+
+      .sec_5 .whole_logo_box .logo_box .logo_wrap .logo_img.active {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+
+      .sec_5 .whole_logo_box .logo_box .logo_wrap .logo_img-1 {
+        width: 490px;
+      }
+
+      .sec_5 .whole_logo_box .logo_box .logo_wrap .logo_img-2 {
+        width: 290px;
+      }
+
+      .sec_5 .whole_logo_box .logo_box .logo_wrap .logo_img-3 {
+        width: 185px;
+      }
+
+      .sec_5 .whole_logo_box .logo_box .logo_wrap .logo_img-4 {
+        width: 280px;
+        padding-bottom: 100px;
+      }
+
+      .sec_5 .bottom_wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      /* 섹션 5 끝 */
+
+      /* 섹션6 시작 */
+
+      .sec_6 {
+        background: url(/greendays_imgs/6_bg.png) no-repeat center top / cover;
+        position: relative;
+      }
+
+      .sec_6 .text_box {
+        position: absolute;
+        width: 800px;
+        height: 230px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        text-align: center;
+      }
+
+      .sec_6 .text_box .character_system {
+        position: static;
+      }
+
+      .sec_6 .text_box h3 {
+        font-family: "Barlow", sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: #656566;
+      }
+
+      .sec_6 .text_box p {
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 13px;
+        color: #7e7e7f;
+        line-height: 20px;
+      }
+
+      /* 구름 애니매이션 */
+
+      .sec_6 > .cloud {
+        position: absolute;
+        width: 150px;
+        animation: floatCloud 25s linear infinite;
+      }
+
+      @keyframes floatCloud {
+        0% {
+          transform: translateX(-150px);
+        }
+        100% {
+          transform: translateX(100vw);
+        }
+      }
+
+      .sec_6 > .cloud_1 {
+        top: 30px;
+        animation-delay: 0s;
+      }
+
+      .sec_6 > .cloud_2 {
+        top: 80px;
+        animation-delay: -13s;
+      }
+
+      .sec_6 > .cloud_3 {
+        top: 150px;
+        animation-delay: -20s;
+      }
+
+      .sec_6 > .cloud_4 {
+        top: 200px;
+        animation-delay: -7s;
+      }
+
+      /* 캐릭터 설정 */
+
+      .sec_6 .character-box {
+        position: absolute;
+        width: 1200px;
+        bottom: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: flex-end;
+        gap: 45px;
+        justify-content: center;
+      }
+
+      .sec_6 .character-box .img_box:nth-child(1),
+      .sec_6 .character-box .img_box:nth-child(2),
+      .sec_6 .character-box .img_box:nth-child(5) {
+        width: 130px;
+      }
+
+      .sec_6 .character-box .img_box:nth-child(3),
+      .sec_6 .character-box .img_box:nth-child(4) {
+        width: 110px;
+      }
+      .sec_6 .character-box .img_box:nth-child(6) {
+        width: 120px;
+      }
+
+      .sec_6 .character-box .img_box:nth-child(7) {
+        width: 40px;
+        position: absolute;
+        top: 30px;
+        left: 380px;
+      }
+
+      .character_jump:hover {
+        animation: jump-smooth 0.7s ease-out;
+      }
+
+      @keyframes jump-smooth {
+        0% {
+          transform: translateY(0);
+        }
+        20% {
+          transform: translateY(-30px);
+        }
+        40% {
+          transform: translateY(-60px);
+        }
+        80% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      /* 섹션6 끝 */
+
+      /* 섹션7 시작 */
+
+      .sec_7 {
+        background-color: #d1f1fe;
+      }
+
+      .sec_7 .bean {
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translateX(-50%);
+        width: 1200px;
+      }
+
+      .sec_7 .curved-line_top {
+        top: 30px;
+        left: 300px;
+        width: 50px;
+        rotate: 96deg;
+      }
+
+      .sec_7 .leaf {
+        top: 240px;
+        left: 100px;
+        width: 80px;
+      }
+
+      .sec_7 .curved-line_right {
+        top: 210px;
+        right: 120px;
+        width: 60px;
+        rotate: 280deg;
+      }
+
+      .sec_7 .eco-triangle {
+        bottom: 100px;
+        left: 150px;
+        width: 70px;
+      }
+
+      .sec_7 .eco-memo {
+        bottom: 80px;
+        right: 120px;
+        width: 60px;
+        width: 130px;
+      }
+
+      .sec_7 .zigu {
+        width: 270px;
+        top: 320px;
+        right: 160px;
+      }
+
+      .sec_7 .star {
+        width: 60px;
+        top: 320px;
+        right: 460px;
+      }
+
+      .sec_7 .character_story {
+        width: 350px;
+        top: 320px;
+        left: 320px;
+      }
+
+      .sec_7 .character_title {
+        font-family: "Barlow", sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+        color: #656566;
+        line-height: 60px;
+        position: absolute;
+        top: 420px;
+        left: 230px;
+      }
+
+      .sec_7 .character_text {
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 18px;
+        color: #7e7e7f;
+        line-height: 30px;
+        position: absolute;
+        top: 580px;
+        left: 320px;
+      }
+
+      /* 섹션7 끝 */
+
+      /* 섹션8 시작 */
+
+      .sec_8 {
+        position: relative;
+        background: url(/greendays_imgs/8_nightBG.png) no-repeat center top /
+          cover;
+        z-index: 0;
+      }
+
+      /* 섹션8-애니매이션 */
+
+      .sec_8 .UFO {
+        position: absolute;
+        top: 80px;
+        right: 130px;
+        width: 130px;
+        rotate: -10deg;
+        transform: translateX(100%);
+        transition: transform 2s, opacity 2s, scale 2s;
+        opacity: 0;
+        scale: 0.7;
+      }
+
+      .sec_8 .moon {
+        position: absolute;
+        top: 90px;
+        left: 170px;
+        width: 60px;
+        transform: translateX(-200%);
+        transition: transform 2s, opacity 2s;
+        opacity: 0;
+      }
+
+      .sec_8 .UFO.active {
+        scale: 1.3;
+      }
+
+      .sec_8 .UFO.active,
+      .sec_8 .moon.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .sec_8 .sky {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .sec_8 .sky .night {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url(/greendays_imgs/6_bg.png) no-repeat center top / cover;
+        transition: height 0.85s;
+      }
+
+      .sec_8.active .sky .night {
+        height: 0;
+      }
+
+      .sec_8 .sky .ico-star {
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border-radius: 6px;
+        filter: blur(2px);
+      }
+
+      .sec_8 .sky .stars {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 1s;
+      }
+
+      .sec_8 .sky .stars.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .sec_8.active .sky .ico-star {
+        background-color: #fcffd4;
+      }
+
+      .sec_8 .sky .ico-star-1 {
+        top: 30%;
+        left: 10%;
+      }
+
+      .sec_8 .sky .ico-star-2 {
+        top: 10%;
+        left: 20%;
+      }
+
+      .sec_8 .sky .ico-star-3 {
+        top: 25%;
+        left: 15%;
+      }
+
+      .sec_8 .sky .ico-star-4 {
+        top: 20%;
+        right: 15%;
+      }
+
+      .sec_8 .sky .ico-star-5 {
+        top: 23%;
+        right: 30%;
+      }
+
+      .sec_8 .sky .ico-star-6 {
+        top: 13%;
+        right: 27%;
+      }
+
+      .sec_8 .sky .ico-star-7 {
+        top: 25%;
+        left: 22%;
+      }
+
+      .sec_8 .sky .ico-star-8 {
+        top: 15%;
+        left: 50%;
+      }
+
+      .sec_8 .sky .ico-star-9 {
+        top: 13%;
+        left: 37%;
+      }
+
+      .sec_8 .sky .ico-star-10 {
+        top: 27%;
+        left: 48%;
+      }
+
+      @keyframes sparkling {
+        0% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(0.9);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+      }
+
+      .ico-star-1 {
+        animation: sparkling 2s infinite;
+      }
+
+      .ico-star-2 {
+        animation: sparkling 3s infinite;
+      }
+
+      .ico-star-3 {
+        animation: sparkling 5s infinite;
+      }
+
+      .ico-star-4 {
+        animation: sparkling 2s infinite;
+      }
+
+      .ico-star-5 {
+        animation: sparkling 4s infinite;
+      }
+
+      .ico-star-6 {
+        animation: sparkling 1.8s infinite;
+      }
+
+      .ico-star-7 {
+        animation: sparkling 3.5s infinite;
+      }
+
+      .ico-star-8 {
+        animation: sparkling 2.3s infinite;
+      }
+
+      .ico-star-9 {
+        animation: sparkling 2.7s infinite;
+      }
+
+      .ico-star-10 {
+        animation: sparkling 1.6s infinite;
+      }
+
+      /* 섹션8-스와이퍼 */
+
+      .sec_8 .swiper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 260px;
+        width: 1300px;
+        height: 400px;
+        padding: 0 20px;
+      }
+
+      .sec_8 .swiper-slide {
+        background: url(/greendays_imgs/8_characterBG.png) no-repeat center top /
+          cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: #656566;
+      }
+
+      /* .sec_8 .swiper-slide:hover {
+        cursor: url(/greendays_imgs/8_character_cursor.png) 2 2, auto;
+      } */
+
+      /* 캐릭터 이미지 설정 */
+
+      .sec_8 .swiper-slide .character-img {
+        position: absolute;
+        bottom: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        transform-origin: center center;
+        width: 120px;
+        transition: transform 0.3s ease;
+      }
+
+      .sec_8 .swiper-slide .character-img:hover {
+        transform: translateX(-50%) scale(1.2);
+        cursor: url(/greendays_imgs/8_character_cursor.png) 2 2, auto;
+      }
+
+      .sec_8 .BINI .character-img {
+        width: 110px;
+      }
+
+      .sec_8 .KKANG-I .character-img {
+        width: 100px;
+      }
+
+      .sec_8 .YURI .character-img {
+        width: 95px;
+      }
+
+      .sec_8 .REFILL-I .character-img {
+        width: 90px;
+      }
+
+      .sec_8 .CHAEUM-I .character-img {
+        width: 110px;
+        bottom: 160px;
+      }
+
+      /* 캐릭터 화살표 이름 설정 */
+
+      .sec_8 .name_arrow {
+        position: absolute;
+      }
+
+      .sec_8 .HARU .name_arrow {
+        width: 90px;
+        height: 45px;
+        top: 80px;
+        right: 60px;
+      }
+
+      .sec_8 .BIUM .name_arrow {
+        width: 70px;
+        height: 65px;
+        top: 180px;
+        left: 45px;
+        rotate: 10deg;
+      }
+
+      .sec_8 .BINI .name_arrow {
+        width: 87px;
+        height: 40px;
+        top: 70px;
+        left: 80px;
+      }
+
+      .sec_8 .KKANG-I .name_arrow {
+        width: 48px;
+        height: 53px;
+        top: 190px;
+        right: 50px;
+      }
+
+      .sec_8 .YURI .name_arrow {
+        width: 85px;
+        height: 41px;
+        top: 70px;
+        right: 50px;
+      }
+
+      .sec_8 .REFILL-I .name_arrow {
+        width: 63px;
+        height: 64px;
+        top: 130px;
+        right: 40px;
+      }
+
+      .sec_8 .CHAEUM-I .name_arrow {
+        width: 66px;
+        height: 82px;
+        top: 80px;
+        left: 60px;
+      }
+
+      /* 캐릭터 성격 설정 */
+
+      .sec_8 .swiper-slide .mbti_box {
+        font-family: "Barlow", sans-serif;
+        position: absolute;
+        bottom: 110px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5px;
+        width: 200px;
+      }
+
+      .sec_8 .swiper-slide .mbti_box span {
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 5px 15px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+      }
+
+      .sec_8 .swiper-slide .mbti_box span:first-child {
+        background-color: #c7e0ea;
+      }
+
+      .sec_8 .swiper-slide p {
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 14px;
+        width: 250px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .sec_8 .swiper-button-prev,
+      .sec_8 .swiper-button-next {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 48%;
+        border-radius: 50%;
+        cursor: url(/greendays_imgs/8_character_cursor.png) 2 2, auto;
+      }
+
+      .sec_8 .swiper-button-prev {
+        left: 275px;
+        background: url(/greendays_imgs/8_btn_prev.png) no-repeat center top /
+          cover;
+        cursor: url(/greendays_imgs/8_character_cursor.png) 2 2, auto;
+      }
+
+      .sec_8 .swiper-button-next {
+        right: 270px;
+        background: url(/greendays_imgs/8_btn_next.png) no-repeat center top /
+          cover;
+      }
+
+      .sec_8 .swiper-button-prev::after,
+      .sec_8 .swiper-button-next::after {
+        display: none;
+        content: none;
+      }
+
+      .sec_8 .swiper-pagination {
+        position: absolute;
+        bottom: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .sec_8 .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+        background: gray;
+        opacity: 0.5;
+        border-radius: 4px;
+        transition: all 0.3s;
+      }
+
+      .sec_8 .swiper-pagination-bullet-active {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        border-radius: 50%;
+        background: url(/greendays_imgs/8_pagination_bullet_active.png)
+          no-repeat center center / cover;
+      }
+
+      /* 섹션8 - 팝업 */
+
+      .sec_8 .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 100;
+      }
+
+      .sec_8 .popup.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* 팝업-배경 설정 */
+
+      .sec_8 .popup__content {
+        position: relative;
+        transform: translateY(-100%);
+        transition: transform 0.3s;
+      }
+
+      .sec_8 > .HARU > .popup__content {
+        background: url(/greendays_imgs/8_HARU_BG.png) no-repeat center /
+          contain;
+        width: 700px;
+        height: 300px;
+      }
+
+      .sec_8 > .BIUM > .popup__content {
+        background: url(/greendays_imgs/8_BIUM_BG.png) no-repeat center /
+          contain;
+        width: 700px;
+        height: 220px;
+      }
+
+      .sec_8 > .BINI > .popup__content {
+        background: url(/greendays_imgs/8_BINI_BG.png) no-repeat center /
+          contain;
+        width: 700px;
+        height: 300px;
+      }
+
+      .sec_8 > .KKANG-I > .popup__content {
+        background: url(/greendays_imgs/8_KKANG-I_BG.png) no-repeat center /
+          contain;
+        width: 700px;
+        height: 300px;
+      }
+
+      .sec_8 > .YURI > .popup__content {
+        background: url(/greendays_imgs/8_YURI_BG.png) no-repeat center /
+          contain;
+        width: 700px;
+        height: 300px;
+      }
+
+      .sec_8 > .REFILL-I > .popup__content {
+        background: url(/greendays_imgs/8_REFILL-I_BG.png) no-repeat center /
+          contain;
+        width: 700px;
+        height: 300px;
+      }
+
+      .sec_8 > .CHAEUM-I > .popup__content {
+        background: url(/greendays_imgs/8_CHAEUM-I_BG.png) no-repeat center /
+          contain;
+        width: 700px;
+        height: 300px;
+      }
+
+      .sec_8 .popup.active .popup__content {
+        transform: translateY(0);
+      }
+
+      /* 팝업-닫기버튼 설정 */
+
+      .sec_8 .popup__content .popup__btn-close {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+        transition: transform 0.3s;
+        background: url(/greendays_imgs/8_popup_close.png) no-repeat center /
+          contain;
+      }
+
+      .sec_8 .popup__content .popup__btn-close:hover {
+        scale: 1.2;
+      }
+
+      .sec_8 .HARU .popup__content .popup__btn-close {
+        right: 10px;
+        top: 10px;
+      }
+
+      .sec_8 .BIUM .popup__content .popup__btn-close {
+        right: 20px;
+        top: -25px;
+      }
+
+      .sec_8 .BINI .popup__content .popup__btn-close {
+        right: 20px;
+        top: 20px;
+      }
+
+      .sec_8 .KKANG-I .popup__content .popup__btn-close {
+        right: 0px;
+        top: -15px;
+      }
+
+      .sec_8 .YURI .popup__content .popup__btn-close {
+        right: 30px;
+        top: 10px;
+      }
+
+      .sec_8 .REFILL-I .popup__content .popup__btn-close {
+        right: -10px;
+        top: -10px;
+      }
+
+      .sec_8 .CHAEUM-I .popup__content .popup__btn-close {
+        right: 40px;
+        top: -10px;
+      }
+
+      /* 팝업-캐릭터설정 */
+
+      .sec_8 .popup__content .popup__character {
+        position: absolute;
+      }
+
+      .sec_8 .HARU .popup__character {
+        background: url(/greendays_imgs/8_HARU.png) no-repeat center / contain;
+        width: 250px;
+        height: 250px;
+        left: -45px;
+        top: 0px;
+      }
+
+      .sec_8 .BIUM .popup__character {
+        background: url(/greendays_imgs/8_BIUM.png) no-repeat center / contain;
+        width: 220px;
+        height: 230px;
+        left: -25px;
+        top: -10px;
+      }
+
+      .sec_8 .BINI .popup__character {
+        background: url(/greendays_imgs/8_BINI.png) no-repeat center / contain;
+        width: 250px;
+        height: 250px;
+        left: -25px;
+        top: 10px;
+      }
+
+      .sec_8 .KKANG-I .popup__character {
+        background: url(/greendays_imgs/8_KKANG-I.png) no-repeat center /
+          contain;
+        width: 250px;
+        height: 250px;
+        left: -45px;
+        top: 0px;
+      }
+
+      .sec_8 .YURI .popup__character {
+        background: url(/greendays_imgs/8_YURI.png) no-repeat center / contain;
+        width: 250px;
+        height: 250px;
+        left: -45px;
+        top: 0px;
+      }
+
+      .sec_8 .REFILL-I .popup__character {
+        background: url(/greendays_imgs/8_REFILL-I.png) no-repeat center /
+          contain;
+        width: 250px;
+        height: 250px;
+        left: -45px;
+        top: 10px;
+      }
+
+      .sec_8 .CHAEUM-I .popup__character {
+        background: url(/greendays_imgs/8_CHAEUM-I.png) no-repeat center /
+          contain;
+        width: 160px;
+        height: 160px;
+        right: 80px;
+        top: -20px;
+      }
+
+      /* 팝업-캐릭터 텍스트 박스 설정 */
+
+      .sec_8 .popup__content .popup__text-box {
+        position: absolute;
+        top: 80px;
+        left: 200px;
+      }
+
+      .sec_8 .BIUM .popup__content .popup__text-box {
+        top: 45px;
+        left: 200px;
+      }
+
+      .sec_8 .BINI .popup__content .popup__text-box {
+        top: 100px;
+        left: 230px;
+      }
+
+      .sec_8 .CHAEUM-I .popup__content .popup__text-box {
+        top: 80px;
+        left: 220px;
+      }
+
+      /* 팝업-캐릭터 이름 설정 */
+
+      .sec_8 .popup__content .popup__name {
+        margin-bottom: 20px;
+      }
+
+      .sec_8 .HARU .popup__name {
+        background: url(/greendays_imgs/8_HARU_name.png) no-repeat center /
+          contain;
+        width: 65px;
+        height: 42px;
+      }
+
+      .sec_8 .BIUM .popup__name {
+        background: url(/greendays_imgs/8_BIUM_name.png) no-repeat center /
+          contain;
+        width: 85px;
+        height: 40px;
+      }
+
+      .sec_8 .BINI .popup__name {
+        background: url(/greendays_imgs/8_BINI_name.png) no-repeat center /
+          contain;
+        width: 67px;
+        height: 38px;
+      }
+
+      .sec_8 .KKANG-I .popup__name {
+        background: url(/greendays_imgs/8_KKANG-I_name.png) no-repeat center /
+          contain;
+        width: 64px;
+        height: 43px;
+      }
+
+      .sec_8 .YURI .popup__name {
+        background: url(/greendays_imgs/8_YURI_name.png) no-repeat center /
+          contain;
+        width: 53px;
+        height: 34px;
+      }
+
+      .sec_8 .REFILL-I .popup__name {
+        background: url(/greendays_imgs/8_REFILL-I_name.png) no-repeat center /
+          contain;
+        width: 83px;
+        height: 42px;
+      }
+
+      .sec_8 .CHAEUM-I .popup__name {
+        background: url(/greendays_imgs/8_CHAEUM-I_name.png) no-repeat center /
+          contain;
+        width: 90px;
+        height: 38px;
+      }
+
+      /* 팝업-캐릭터 설명 텍스트 설정 */
+
+      .sec_8 .popup__content .popup__text {
+        font-family: "Barlow", sans-serif;
+        color: #656566;
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      [class*="popup-"][class$="-actived"],
+      [class*="popup-"][class$="-actived"] > body {
+        overflow: hidden;
+      }
+
+      /* 섹션8 끝 */
+
+      /* 섹션9 시작 */
+
+      .sec_9 {
+        position: relative;
+        z-index: -2;
+      }
+
+      .sec_9 .top_wave {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .sec_9 .brand_title_box {
+        margin: 80px 0;
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 15px;
+        line-height: 20px;
+        color: #7e7e7f;
+      }
+
+      .sec_9 .brand_title_box .title_img_box {
+        width: 350px;
+        margin-bottom: 10px;
+      }
+
+      /* 컬러칩 */
+
+      .sec_9 .color_chip_box {
+        width: 100%;
+        height: 410px;
+        margin-bottom: 180px;
+        display: flex;
+      }
+
+      .sec_9 .color_chip_box .color_wrap {
+        position: relative;
+        width: 20%;
+        transition: transform 0.5s, opacity 0.5s;
+        transform: translateY(30%);
+        opacity: 0;
+      }
+
+      .sec_9 .color_chip_box .color_wrap.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .sec_9 .color_chip_box .color_wrap .color_chip {
+        width: 200px;
+        position: absolute;
+      }
+
+      .sec_9 .color_skyblue {
+        top: 0px;
+        left: 30px;
+        rotate: -14deg;
+      }
+
+      .sec_9 .color_ligntgreen {
+        bottom: 0;
+        left: 30px;
+      }
+
+      .sec_9 .color_lightgrey {
+        top: 0;
+        left: 35px;
+        rotate: -10deg;
+      }
+
+      .sec_9 .color_lemon {
+        bottom: 30px;
+        left: 35px;
+        rotate: 5deg;
+      }
+
+      .sec_9 .color_lightsalmon {
+        top: 30px;
+        left: 38px;
+        rotate: 10deg;
+      }
+
+      /* 폰트 */
+
+      .sec_9 .font_box {
+        position: static;
+        padding-left: 37px;
+        width: 1282px;
+        margin-bottom: 50px;
+        transition: transform 1s, opacity 1s;
+        transform: translateY(30%);
+        opacity: 0;
+      }
+
+      .sec_9 .font_box.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      /* 섹션9 끝 */
+
+      /* 섹션10시작 */
+      .sec_10 {
+        background: url(greendays_imgs/10_bg.png) no-repeat center top / cover;
+      }
+
+      .sec_10 .con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .sec_10 .con .img_box {
+        position: relative;
+        width: 350px;
+        height: 490px;
+        margin: 80px 0 130px;
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sec_10 .con .img_box img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.5s, visibility 0.5s;
+      }
+
+      .sec_10 .con .img_box .hover {
+        opacity: 0;
+        visibility: hidden;
+        width: 270px;
+      }
+
+      .sec_10 .con .img_box:hover .hover {
+        opacity: 0.8;
+        visibility: visible;
+      }
+
+      .sec_10 .con .img_box:hover .normal {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .sec_10 .img_box .grapefruit {
+        width: 160px;
+      }
+
+      .sec_10 .img_box .lemon {
+        width: 240px;
+      }
+      .sec_10 .img_box .lilac {
+        width: 163px;
+      }
+
+      /* 섹션10 끝 */
+
+      /* 섹션11 시작 */
+      .sec_11 {
+        background: url(greendays_imgs/10_bg.png) no-repeat center top / cover;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .sec_11 .glued_sticker {
+        position: absolute;
+        width: 1440px;
+        height: calc(100% - 22px);
+        top: -50px;
+        left: -80px;
+        rotate: -4.52deg;
+      }
+
+      .sec_11 .roll_sticker {
+        position: absolute;
+        width: 1120px;
+        height: 840px;
+        top: 160px;
+        right: 0;
+        rotate: -2.56deg;
+      }
+      /* 섹션11 끝 */
+
+      /* 섹션12 시작 */
+      .sec_12 {
+        background: url(greendays_imgs/10_bg.png) no-repeat center top / cover;
+      }
+
+      .sec_12 .con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+      }
+
+      .sec_12 .img_box {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sec_12 .img_box > img {
+        width: 963px;
+        height: 750px;
+      }
+
+      .sec_12 .img_box > .txt {
+        background-color: white;
+        position: relative;
+        width: 487px;
+        height: 750px;
+        overflow: hidden;
+      }
+
+      .sec_12 > .con > .img_box > .txt > img {
+        position: absolute;
+      }
+
+      .sec_12 > .con > .img_box > .txt > img:first-child {
+        scale: 2.3;
+      }
+
+      .sec_12 > .con > .img_box > .txt > img:nth-child(2) {
+        top: 41%;
+        transform: rotate(2deg);
+        width: 495px;
+        height: 190px;
+      }
+
+      .sec_12 > .con > .img_box > .txt > img:last-child {
+        top: 23%;
+        width: 280px;
+        height: 390px;
+      }
+
+      /* 섹션12 끝 */
+
+      /* 섹션13 시작 */
+      .sec_13 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1160px;
+      }
+
+      .sec_13 .bg_img {
+        position: absolute;
+        top: -4px;
+        left: 0;
+        width: 100%;
+      }
+
+      .sec_13 .character_goods {
+        margin-left: 30px;
+        width: 980px;
+        rotate: 20deg;
+      }
+      /* 섹션13 끝 */
+
+      /* 섹션14 시작 */
+      .sec_14 {
+        position: relative;
+      }
+
+      .sec_14 .product-text-box {
+        height: 130px;
+        margin-left: 280px;
+        margin-top: 80px;
+      }
+
+      .sec_14 .product-text-box .title {
+        width: 244px;
+      }
+
+      .sec_14 .product-text-box .line {
+        margin: 12px 0 26px;
+        width: 310px;
+      }
+
+      .sec_14 .product-text-box p {
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 15px;
+        line-height: 20px;
+        color: #595959;
+      }
+
+      .sec_14 > .img_box {
+        position: absolute;
+      }
+
+      .sec_14 .leaf-1 {
+        left: 0;
+        bottom: 260px;
+        width: 270px;
+      }
+      .sec_14 .leaf-2 {
+        right: 0;
+        top: 0;
+        rotate: 180deg;
+        width: 300px;
+      }
+
+      .sec_14 .products {
+        left: 44%;
+        top: 30%;
+        width: 770px;
+        z-index: 10;
+      }
+
+      .sec_14 .bottom {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      /* 섹션14 끝 */
+
+      /* 섹션15 시작 */
+
+      .sec_15 {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .sec_15 .product-text-box {
+        height: 130px;
+        margin-left: 280px;
+        margin-top: 80px;
+      }
+
+      .sec_15 .product-text-box .title {
+        width: 136px;
+      }
+
+      .sec_15 .product-text-box .line {
+        margin: 12px 0 26px;
+        width: 310px;
+      }
+
+      .sec_15 .product-text-box p {
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 15px;
+        line-height: 20px;
+        color: #595959;
+      }
+
+      .sec_15 > .img_box {
+        position: absolute;
+      }
+
+      .sec_15 .leaf-1 {
+        width: 170px;
+        left: 0;
+        top: 0;
+      }
+
+      .sec_15 .leaf-2 {
+        top: 0;
+        right: 0;
+        width: 300px;
+        rotate: 180deg;
+      }
+
+      .sec_15 .leaf-3 {
+        bottom: 20px;
+        left: 44%;
+        width: 240px;
+        rotate: 10deg;
+        transform: scale(-1, 1);
+      }
+
+      .sec_15 .bottom-L {
+        bottom: -2px;
+        left: 0;
+        width: 340px;
+      }
+
+      .sec_15 .bottom-R {
+        bottom: 0;
+        right: 0;
+        width: 320px;
+      }
+
+      .sec_15 .top {
+        top: -2px;
+        left: 30%;
+        width: 420px;
+      }
+
+      .sec_15 .products-dotted-line {
+        width: 1600px;
+        bottom: 0;
+        left: 130px;
+      }
+
+      /* 섹션15 끝 */
+
+      /* 섹션16 시작 */
+
+      .sec_16 {
+        display: flex;
+      }
+
+      .sec_16 .img_wrap {
+        width: 800px;
+        height: 100%;
+        overflow: hidden;
+        transform: translateX(-50%);
+        transition: transform 1s, opacity 1s;
+        opacity: 0;
+      }
+
+      .sec_16 .img_wrap.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .sec_16 .img_wrap img {
+        height: 100%;
+      }
+
+      .sec_16 .product_wrap {
+        width: 1120px;
+        height: 100%;
+      }
+
+      .sec_16 .product_wrap .product-text-box {
+        height: 130px;
+        margin-left: 140px;
+        margin-top: 80px;
+      }
+
+      .sec_16 .product_wrap .product-text-box .title {
+        width: 230px;
+      }
+
+      .sec_16 .product_wrap .product-text-box .line {
+        margin: 12px 0 26px;
+        width: 310px;
+      }
+
+      .sec_16 .product_wrap .product-text-box p {
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 15px;
+        line-height: 20px;
+        color: #595959;
+      }
+
+      .sec_16 .product_wrap .handsoap {
+        width: 650px;
+        margin: 100px auto 0;
+        padding: 0 0 0 50px;
+      }
+
+      /* 섹션16 끝 */
+
+      /* 섹션17 시작 */
+
+      .sec_17 {
+        display: flex;
+      }
+
+      .sec_17 .product_wrap {
+        width: 1120px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sec_17 .product_wrap .product-text-box {
+        height: 130px;
+        width: 480px;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sec_17 .product_wrap .product-text-box .title {
+        width: 108px;
+      }
+
+      .sec_17 .product_wrap .product-text-box .line {
+        margin: 12px 0 26px;
+        width: 310px;
+      }
+
+      .sec_17 .product_wrap .product-text-box p {
+        font-family: "GyeonggiMillenniumBackground";
+        font-size: 15px;
+        line-height: 20px;
+        color: #595959;
+      }
+
+      .sec_17 .img_wrap {
+        width: 800px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        transform: translateX(50%);
+        transition: transform 1s, opacity 1s;
+        opacity: 0;
+      }
+
+      .sec_17 .img_wrap.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      /* 섹션17 끝 */
+
+      /* 섹션18 시작 */
+
+      .sec_18 {
+        background: url(/greendays_imgs/18_background.png) no-repeat center top /
+          cover;
+      }
+
+      /* 섹션18 끝 */
+
+      /* 섹션19 시작 */
+
+      .sec_19 {
+        position: relative;
+        height: 100vh;
+      }
+
+      .sec_19 .img_box {
+        position: absolute;
+        width: calc(100vw / 3);
+        height: calc(100vh / 2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+      }
+
+      .sec_19 .img_box_1 {
+        background: url(/greendays_imgs/19_tag.png) no-repeat center top / cover;
+        left: 0;
+        top: 0;
+      }
+
+      .sec_19 .img_box_2 {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        background-color: #0d8ac9;
+      }
+
+      .sec_19 .img_box_2 img {
+        width: 345px;
+      }
+
+      .sec_19 .img_box_3 {
+        background: url(/greendays_imgs/19_skyBG.png) no-repeat center top /
+          cover;
+        right: 0;
+        top: 0;
+        background-color: purple;
+      }
+
+      .sec_19 .img_box_4 {
+        left: 0;
+        bottom: 0;
+        background: url(/greendays_imgs/19_package_logo.png) no-repeat center
+          top / cover;
+      }
+
+      .sec_19 .img_box_5 {
+        background: url(/greendays_imgs/19_cap.png) no-repeat center top / cover;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+
+      .sec_19 .img_box_6 {
+        right: 0;
+        bottom: 0;
+        background: url(/greendays_imgs/19_identity.png) no-repeat center top /
+          cover;
+      }
+
+      .sec_19 .img_box_6 img {
+        width: 300px;
+      }
+
+      /* 섹션19 끝 */
+
+      /* 섹션20 시작 */
+
+      .sec_20 .img_box_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 610px;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+      }
+
+      .sec_20 .img_box_wrap .img_box {
+        position: static;
+        width: 400px;
+        height: 100%;
+        transition: transform 1s, opacity 1s;
+        transform: translateY(30%);
+        opacity: 0;
+      }
+
+      .sec_20 .img_box_wrap .img_box.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .sec_20 .img_box_wrap .img_box:first-child {
+        width: 470px;
+      }
+
+      /* 섹션20 끝 */
+
+      /* 섹션21 시작 */
+
+      .sec_21 {
+        background: url(/greendays_imgs/21_box_tape.png) no-repeat center top /
+          cover;
+      }
+
+      /* 섹션21 끝 */
+
+      /* 섹션22 시작 */
+
+      .sec_22 {
+        background: url(/greendays_imgs/22_Tumblr.png) no-repeat center top /
+          cover;
+      }
+
+      /* 섹션22 끝 */
+
+      /* 섹션23 시작 */
+
+      .sec_23 {
+        background: url(/greendays_imgs/23.wall.png) no-repeat center top /
+          cover;
+      }
+
+      /* 섹션23 끝 */
+
+      /* 섹션24 시작 */
+
+      .sec_24 {
+        background: url(/greendays_imgs/24_notebook&phone.png) no-repeat center
+          top / cover;
+      }
+
+      /* 섹션24 끝 */
+
+      /* 섹션25 시작 */
+
+      .sec_25 {
+        background: url(/greendays_imgs/25_poster.png) no-repeat center top /
+          cover;
+      }
+
+      /* 섹션25 끝 */
+
+      /* 섹션26 시작 */
+
+      .sec_26 {
+        background: url(/greendays_imgs/26_sign.png) no-repeat center top /
+          cover;
+        height: 1900px;
+      }
+
+      /* 섹션26 끝 */
+
+      /* 어사이드 시작 */
+
+      aside {
+        position: fixed;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%) translateX(-20px); /* 처음에 살짝 왼쪽 */
+        border: solid 3px rgba(112, 110, 110, 0.16);
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 30px rgba(128, 126, 126, 0.1);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 50px;
+        padding: 30px 10px;
+        border-radius: 20px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s, transform 0.5s; /* 위치도 transition */
+        z-index: 100;
+      }
+
+      aside.show {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(-50%) translateX(0); /* 원래 자리 */
+      }
+
+      aside > div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+      }
+
+      aside a {
+        /* border: solid 1px red; */
+      }
+
+      aside img {
+        opacity: 0;
+        transition: opacity 0.3s;
+        width: 90px;
+      }
+
+      aside img.visible {
+        opacity: 1;
+      }
+
+      aside a.bold {
+        font-weight: bold;
+      }
+
+      /* 어사이드 끝 */
+    </style>
+
+    <script>
+      /* 발견되면 활성화시키는 라이브러리 시작 */
+      function ActiveOnVisible__init() {
+        $(".active-on-visible").each(function (index, node) {
+          var $node = $(node);
+
+          var onFuncName = $node.attr("data-active-on-visible-on-func-name");
+          var offFuncName = $node.attr("data-active-on-visible-off-func-name");
+
+          $node.data("data-active-on-visible-on-func-name", onFuncName);
+          $node.data("data-active-on-visible-off-func-name", offFuncName);
+        });
+
+        $(window).resize(_.debounce(ActiveOnVisible__initOffset, 500));
+        ActiveOnVisible__initOffset();
+
+        $(window).scroll(_.debounce(ActiveOnVisible__checkAndActive, 50));
+        ActiveOnVisible__checkAndActive();
+      }
+
+      function ActiveOnVisible__initOffset() {
+        var windowHeight = $(window).height();
+
+        $(".active-on-visible:not(.actived)").each(function (index, node) {
+          var $node = $(node);
+
+          var offsetTop = $node.offset().top;
+
+          var matrix = $node
+            .css("transform")
+            .replace(/[^0-9\-.,]/g, "")
+            .split(",");
+          var translateX = matrix[12] || matrix[4];
+          var translateY = matrix[13] || matrix[5];
+
+          if (translateY) {
+            offsetTop -= translateY;
+          }
+
+          $node.attr("data-active-on-visible-offsetTop", offsetTop);
+          $node.data("data-active-on-visible-offsetTop", offsetTop);
+
+          if (!$node.attr("data-active-on-visible-diff-y")) {
+            $node.attr("data-active-on-visible-diff-y", "0");
+          }
+
+          if (!$node.attr("data-active-on-visible-delay")) {
+            $node.attr("data-active-on-visible-delay", "0");
+          }
+
+          var diffY = $node.attr("data-active-on-visible-diff-y");
+          var delay = $node.attr("data-active-on-visible-delay");
+
+          if (diffY.substr(-2, 2) == "vh") {
+            diffY = parseInt(diffY);
+
+            diffY = windowHeight * (diffY / 100);
+          } else if (diffY.substr(-1, 1) == "%") {
+            diffY = parseInt(diffY);
+
+            diffY = $node.height() * (diffY / 100);
+          } else {
+            diffY = parseInt(diffY);
+          }
+
+          $node.attr("data-active-on-visible-diff-y-real", diffY);
+          $node.data("data-active-on-visible-diff-y", diffY);
+          $node.data("data-active-on-visible-delay", delay);
+        });
+
+        ActiveOnVisible__checkAndActive();
+      }
+
+      function ActiveOnVisible__checkAndActive() {
+        $(".active-on-visible:not(.actived)").each(function (index, node) {
+          var $node = $(node);
+
+          var offsetTop = $node.data("data-active-on-visible-offsetTop") * 1;
+          var diffY = parseInt($node.data("data-active-on-visible-diff-y"));
+          var delay = parseInt($node.data("data-active-on-visible-delay"));
+
+          var onFuncName = $node.data("data-active-on-visible-on-func-name");
+          var offFuncName = $node.data("data-active-on-visible-off-func-name");
+
+          var scrollTop = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          var nodeHeight = $node.height();
+
+          if (scrollTop + windowHeight + diffY > offsetTop) {
+            setTimeout(function () {
+              if ($node.hasClass("active") == false) {
+                $node.addClass("active");
+
+                if ($node.hasClass("can-active-once")) {
+                  $node.addClass("actived");
+                }
+
+                if (window[onFuncName]) {
+                  window[onFuncName]($node);
+                }
+              }
+            }, delay);
+          } else {
+            if ($node.hasClass("active")) {
+              $node.removeClass("active");
+
+              if (window[offFuncName]) {
+                window[offFuncName]($node);
+              }
+            }
+          }
+        });
+      }
+
+      $(function () {
+        ActiveOnVisible__init();
+      });
+      /* 발견되면 활성화시키는 라이브러리 끝 */
+
+      // 스와이퍼 시작
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+      });
+
+      // 스와이퍼 끝
+
+      // 팝업 시작
+
+      function Popup__init(no) {
+        $(".btn-popup-" + no).click(function () {
+          $(".popup-" + no).addClass("active");
+          $("HTML").addClass("popup-" + no + "-actived");
+        });
+
+        $(".popup-" + no + " .popup__btn-close, .popup-" + no).click(
+          function () {
+            $(".popup-" + no).removeClass("active");
+            $("HTML").removeClass("popup-" + no + "-actived");
+          }
+        );
+
+        $(".popup-" + no + " .popup__content").click(function () {
+          return false;
+        });
+      }
+
+      for (let i = 1; i <= 7; i++) {
+        Popup__init(i);
+      }
+
+      //팝업 끝
+
+      // 어사이드 시작
+
+      // 어사이드 선택
+      const sidebar = document.querySelector(".sidebar");
+      const items = sidebar.querySelectorAll("div");
+      const sections = document.querySelectorAll(".sec");
+
+      // 섹션별 강조 매핑
+      const sectionToIndex = {
+        4: 0, 
+        5: 1, 
+        6: 2, 
+        7: 2, 
+        8: 2, 
+        9: 3, 
+      };
+
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const winH = window.innerHeight;
+
+        const sec4 = document.querySelector(".sec_4").offsetTop;
+        const sec9 = document.querySelector(".sec_9").offsetTop;
+
+        // aside 표시 구간: 섹션4~9
+        if (scrollY >= sec4 && scrollY < sec9 + winH) {
+          sidebar.classList.add("show");
+        } else {
+          sidebar.classList.remove("show");
+        }
+
+        // 현재 활성 섹션 체크
+        let activeIndex = -1;
+        for (let i = 4; i <= 9; i++) {
+          const section = document.querySelector(`.sec_${i}`);
+          if (!section) continue;
+
+          const top = section.offsetTop;
+          const bottom = top + section.offsetHeight;
+
+          if (scrollY >= top - winH / 2 && scrollY < bottom - winH / 2) {
+            activeIndex = sectionToIndex[i];
+            break;
+          }
+        }
+
+        // 강조 처리
+        items.forEach((item, idx) => {
+          const link = item.querySelector("a");
+          const img = item.querySelector("img");
+          if (idx === activeIndex) {
+            link.classList.add("bold");
+            img.classList.add("visible");
+          } else {
+            link.classList.remove("bold");
+            img.classList.remove("visible");
+          }
+        });
+      });
+      // 어사이드 끝
+    </script>
+  </body>
+</html>
